@@ -21,11 +21,11 @@ while repetir != 2:
                     print(f'Numero negativo par {num1}')
                 else:
                     print(f"Número {num1} é zerado ou invalido")
-    repetir = int(input(("Deseja repetir caga-sangue? \n"
+    repetir = int(input(("Deseja repetir? \n"
                          "1 - Sim \n"
                          "2 - Não \n")))
     if repetir != 2 or repetir != 1:
-        print("Opção invalida burro, sabe ler saporra não?")
-        repetir = int(input(("Deseja repetir caga-sangue? \n"
+        print("Opção invalida, tente novamente")
+        repetir = int(input(("Deseja repetir? \n"
                              "1 - Sim \n"
                              "2 - Não \n")))
