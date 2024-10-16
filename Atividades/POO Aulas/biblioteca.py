@@ -137,3 +137,32 @@ class Ciclista(Atleta):
 class TriAtleta(Corredor ,Nadador ,Ciclista):
     def __init__(self,nome,peso,idade):
         super().__init__(nome,peso,idade)
+
+
+def Menu():
+    while True:
+        print(f"Menu\n"
+              f"1- Gravar\n"
+              f"2- Mostrar\n"
+              f"3- Sair\n")
+        op = int(input(f"Digite sua opção: "))
+
+        if op == 3:
+            print("Finalizando...")
+            break
+        else:
+            if op == 1:
+                with open("nome.txt", "a") as arquivo:
+                    nome = input("Digita seu nome: ")
+                    arquivo.write(f"{nome}\n")
+            else:
+                if op == 2:
+                    with open("nome.txt", "r") as LerArquivo:
+                        conteudo = LerArquivo.read()
+                        print(conteudo)
+                else:
+                    print("Opção Invalida.")
+
+
+
+
